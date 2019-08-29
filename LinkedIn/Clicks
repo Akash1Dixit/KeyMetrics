@@ -1,0 +1,469 @@
+{
+   "title": "LinkedIn Clicks and Likes (12 Months)",
+   "id": "3039cb3f238b3426754e3df9567b7252",
+   "workspace": {
+      "datasources": [
+         "528f0da698a921552b7cklipbyjarvis"
+      ],
+      "dimensions": {
+         "w": 1035
+      }
+   },
+   "appliedMigrations": {
+      "result_rows2": true,
+      "post_dst": true,
+      "textOnlyFormulas": true,
+      "separate_root_dsts": true
+   },
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "71adc586-4",
+         "displayName": "Layout Grid",
+         "components": [
+            {
+               "type": "simple_value",
+               "id": "41fbe61a-8",
+               "displayName": "Value Pair 2",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dst41fbe61a8"
+               },
+               "components": [
+                  {
+                     "type": "label",
+                     "role": "primary",
+                     "id": "e69dc70a-9",
+                     "displayName": "Primary Value",
+                     "size": "medium",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {},
+                           "defaultAggregate": "COUNT",
+                           "fmt": "txt"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dste69dc70a9",
+                        "kid": "3039cb3f238b3426754e3df9567b7252"
+                     },
+                     "formulas": [
+                        {
+                           "txt": "\"Clicks\"",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Clicks"
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c",
+                     "font_colour": "cx-color_blue_5"
+                  },
+                  {
+                     "type": "label",
+                     "role": "secondary",
+                     "id": "bb3d400f-10",
+                     "displayName": "Secondary Value",
+                     "size": "x-small",
+                     "fmt": "num",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": true,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isGrouped": true,
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {
+                              "prefix": ""
+                           },
+                           "defaultAggregate": "SUM",
+                           "fmt": "num"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstbb3d400f10",
+                        "kid": "3039cb3f238b3426754e3df9567b7252",
+                        "ops": [
+                           {
+                              "type": "aggregate",
+                              "aggregateBy": "bb3d400f10"
+                           }
+                        ],
+                        "aggs": {
+                           "bb3d400f10": "auto"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "&'d2a99e12'",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           3354
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c"
+                  }
+               ]
+            },
+            {
+               "type": "simple_value",
+               "id": "4a0305a8-5",
+               "displayName": "Value Pair",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dst4a0305a85"
+               },
+               "components": [
+                  {
+                     "type": "label",
+                     "role": "primary",
+                     "id": "c3809ace-6",
+                     "displayName": "Primary Value",
+                     "size": "medium",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {},
+                           "defaultAggregate": "COUNT",
+                           "fmt": "txt"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstc3809ace6",
+                        "kid": "3039cb3f238b3426754e3df9567b7252"
+                     },
+                     "formulas": [
+                        {
+                           "txt": "\"Likes\"",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Likes"
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c",
+                     "font_colour": "cx-color_blue_5"
+                  },
+                  {
+                     "type": "label",
+                     "role": "secondary",
+                     "id": "b33505dc-7",
+                     "displayName": "Secondary Value",
+                     "size": "x-small",
+                     "fmt": "num",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": true,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isGrouped": true,
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {
+                              "prefix": "",
+                              "suffix": ""
+                           },
+                           "defaultAggregate": "SUM",
+                           "fmt": "num"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstb33505dc7",
+                        "kid": "3039cb3f238b3426754e3df9567b7252",
+                        "ops": [
+                           {
+                              "type": "aggregate",
+                              "aggregateBy": "b33505dc7"
+                           }
+                        ],
+                        "aggs": {
+                           "b33505dc7": "auto"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "&'3dd98016'",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           2938
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c"
+                  }
+               ]
+            }
+         ],
+         "rows": 1,
+         "cols": 2
+      },
+      {
+         "type": "chart_series",
+         "id": "8ca60aa22c40c85ab8636b6925b46bd42df67805",
+         "displayName": "Series Chart",
+         "dstContext": {
+            "id": "dst8ca60aa22c40c85ab8636b6925b46bd42df67805",
+            "kid": "3039cb3f238b3426754e3df9567b7252",
+            "ops": [
+               {
+                  "type": "group",
+                  "groupBy": "b36392f4"
+               }
+            ],
+            "aggs": {
+               "3dd98016": "sum",
+               "d2a99e12": "sum"
+            }
+         },
+         "components": [
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "d2a99e12",
+               "displayName": "Clicks",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": true,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "isDSTApplied": true,
+                     "resultCount": 1
+                  },
+                  "prefix": ""
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"848\",\"58\",\"20\",\"78\",\"852\",\"215\",\"55\",\"552\",\"120\",\"95\",\"200\",\"261\")",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     848,
+                     58,
+                     20,
+                     78,
+                     852,
+                     215,
+                     55,
+                     552,
+                     120,
+                     95,
+                     200,
+                     261
+                  ]
+               ],
+               "autoFmt": false,
+               "seriesName": "Clicks",
+               "showValues": true,
+               "axis": "dfa9e6af",
+               "overrideColor": true,
+               "color": "cx-theme_orange_2"
+            },
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "3dd98016",
+               "displayName": "Likes",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": true,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "isDSTApplied": true,
+                     "resultCount": 1
+                  },
+                  "prefix": "",
+                  "suffix": ""
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"98\",\"100\",\"65\",\"398\",\"369\",\"365\",\"269\",\"350\",\"296\",\"186\",\"86\",\"356\")",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     98,
+                     100,
+                     65,
+                     398,
+                     369,
+                     365,
+                     269,
+                     350,
+                     296,
+                     186,
+                     86,
+                     356
+                  ]
+               ],
+               "autoFmt": false,
+               "seriesName": "Likes",
+               "showValues": true,
+               "axis": "dfa9e6af",
+               "overrideColor": true,
+               "color": "cx-theme_orange_5"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_x",
+               "id": "b36392f4",
+               "displayName": "Period",
+               "fmt": "dat2",
+               "fmtArgs": {
+                  "dateInputFormat": "epoch-ms",
+                  "precision": "0",
+                  "dateFormatCustom": "MMM yyyy",
+                  "dateFormat": "custom",
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "isDSTApplied": true,
+                     "resultCount": 1
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"1517521678000\",\"1519940878000\",\"1522619278000\",\"1525211278000\",\"1527889678000\",\"1530481678000\",\"1533160078000\",\"1535838478000\",\"1538430478000\",\"1541108878000\",\"1543700878000\",\"1546379278000\")",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "Feb 2018",
+                     "Mar 2018",
+                     "Apr 2018",
+                     "May 2018",
+                     "Jun 2018",
+                     "Jul 2018",
+                     "Aug 2018",
+                     "Sep 2018",
+                     "Oct 2018",
+                     "Nov 2018",
+                     "Dec 2018",
+                     "Jan 2019"
+                  ]
+               ],
+               "autoFmt": false,
+               "label": "Period",
+               "showLabel": true,
+               "labelAngle": "-45",
+               "labelStagger": "0",
+               "labelDrop": "1",
+               "showLabelTicks": true,
+               "grid": true
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "dfa9e6af",
+               "displayName": "Clicks and Likes",
+               "fmt": "num",
+               "fmtArgs": {},
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "Clicks and Likes",
+               "customInterval": false,
+               "customOrigin": true,
+               "origin": "30",
+               "labelAngle": "-45",
+               "labelDrop": 0,
+               "grid": true
+            }
+         ]
+      }
+   ]
+}
