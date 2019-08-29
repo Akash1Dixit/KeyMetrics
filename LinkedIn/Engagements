@@ -1,0 +1,293 @@
+{
+   "title": "LinkedIn Engagement (12 Months)",
+   "id": "3cabbbf716da47e059fa309c9d8b1b9b",
+   "workspace": {
+      "datasources": [
+         "528f0da698a921552b7cklipbyjarvis"
+      ],
+      "dimensions": {
+         "w": 1063
+      }
+   },
+   "appliedMigrations": {
+      "result_rows2": true,
+      "post_dst": true,
+      "textOnlyFormulas": true,
+      "separate_root_dsts": true
+   },
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "529e881a-1",
+         "displayName": "Layout Grid",
+         "components": [
+            {
+               "type": "simple_value",
+               "id": "ec35e6a3-2",
+               "displayName": "Value Pair",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dstec35e6a32"
+               },
+               "components": [
+                  {
+                     "type": "label",
+                     "role": "primary",
+                     "id": "9b37fb2a-3",
+                     "displayName": "Primary Value",
+                     "size": "medium",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {},
+                           "defaultAggregate": "COUNT",
+                           "fmt": "txt"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst9b37fb2a3",
+                        "kid": "3cabbbf716da47e059fa309c9d8b1b9b",
+                        "ops": [],
+                        "aggs": {
+                           "9b37fb2a3": "auto"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "\"Engagement\"",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Engagement"
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c",
+                     "font_colour": "cx-color_blue_5"
+                  },
+                  {
+                     "type": "label",
+                     "role": "secondary",
+                     "id": "e98a8df0-4",
+                     "displayName": "Secondary Value",
+                     "size": "x-small",
+                     "fmt": "pct",
+                     "fmtArgs": {
+                        "precision": "2",
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": true,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isGrouped": true,
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dste98a8df04",
+                        "kid": "3cabbbf716da47e059fa309c9d8b1b9b",
+                        "ops": [],
+                        "aggs": {
+                           "e98a8df04": "sum"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "SUM(&'91405052')/100",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           0.494106507586803
+                        ]
+                     ],
+                     "autoFmt": false,
+                     "align": "c"
+                  }
+               ]
+            },
+            {
+               "type": "chart_series",
+               "id": "de545d396816f329ec6bd95e02ce3eff75dd133f",
+               "displayName": "Series Chart",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 1
+               },
+               "dstContext": {
+                  "id": "dstde545d396816f329ec6bd95e02ce3eff75dd133f",
+                  "kid": "3cabbbf716da47e059fa309c9d8b1b9b",
+                  "ops": [
+                     {
+                        "type": "group",
+                        "groupBy": "95a8f73c"
+                     }
+                  ],
+                  "aggs": {
+                     "91405052": "average"
+                  }
+               },
+               "components": [
+                  {
+                     "type": "series_data",
+                     "role": "series",
+                     "id": "91405052",
+                     "displayName": "Engagement",
+                     "fmt": "pct",
+                     "fmtArgs": {
+                        "precision": "2",
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": true,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isGrouped": true,
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        },
+                        "prefix": ""
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"1.626193136472466\",\"1.24116177239000941\",\"1.4101272777218203\",\"7.643171253751484\",\"4.8184077607632485\",\"5.833062784730586\",\"2.1497740409879135\",\"5.5222870374493476\",\"6.7182305005820715\",\"3.419604169106453\",\"3.905240293239207\",\"5.1233907314856885\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           1.626193136472466,
+                           1.2411617723900095,
+                           1.4101272777218203,
+                           7.643171253751484,
+                           4.8184077607632485,
+                           5.833062784730586,
+                           2.1497740409879134,
+                           5.522287037449348,
+                           6.718230500582072,
+                           3.419604169106453,
+                           3.905240293239207,
+                           5.123390731485689
+                        ]
+                     ],
+                     "autoFmt": false,
+                     "seriesName": "Engagement",
+                     "renderer": "line",
+                     "chartStyle": "points_area",
+                     "lineWeight": "3",
+                     "showValues": true,
+                     "axis": "a281c6de",
+                     "overrideColor": true,
+                     "color": "cx-theme_orange_5"
+                  },
+                  {
+                     "type": "chart_axis",
+                     "role": "axis_x",
+                     "id": "95a8f73c",
+                     "displayName": "Period",
+                     "fmt": "dat2",
+                     "fmtArgs": {
+                        "dateInputFormat": "epoch-ms",
+                        "dateFormatCustom": "MMM yyyy",
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isGrouped": true,
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        },
+                        "dateFormat": "custom",
+                        "dateInputFormatCustom": "yyyyMM"
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"1517443200000\",\"1519862400000\",\"1522540800000\",\"1525132800000\",\"1527811200000\",\"1530403200000\",\"1533081600000\",\"1535760000000\",\"1538352000000\",\"1541030400000\",\"1543622400000\",\"1546300800000\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Feb 2018",
+                           "Mar 2018",
+                           "Apr 2018",
+                           "May 2018",
+                           "Jun 2018",
+                           "Jul 2018",
+                           "Aug 2018",
+                           "Sep 2018",
+                           "Oct 2018",
+                           "Nov 2018",
+                           "Dec 2018",
+                           "Jan 2019"
+                        ]
+                     ],
+                     "label": "Period",
+                     "labelAngle": "-45",
+                     "labelStagger": "0",
+                     "labelDrop": "1",
+                     "showLabelTicks": true,
+                     "grid": true
+                  },
+                  {
+                     "type": "chart_axis",
+                     "role": "axis_y",
+                     "id": "a281c6de",
+                     "displayName": "Engagement",
+                     "fmt": "pct",
+                     "fmtArgs": {
+                        "precision": "2"
+                     },
+                     "formulas": [],
+                     "data": [],
+                     "autoFmt": true,
+                     "dataDisabled": true,
+                     "label": "Engagement",
+                     "customInterval": false,
+                     "customOrigin": true,
+                     "origin": "1",
+                     "labelAngle": "-45",
+                     "labelDrop": 0,
+                     "grid": true
+                  }
+               ]
+            }
+         ],
+         "rows": 2,
+         "cols": 1
+      }
+   ]
+}
