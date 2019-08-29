@@ -1,0 +1,910 @@
+{
+   "title": "Comments and Posts for LinkedIn (Last 30 Days)",
+   "id": "e72ae6054f319cfe6934edd0eabc615e",
+   "workspace": {
+      "datasources": [
+         "d059960886f05f7dc0d3KavyaMallur9"
+      ],
+      "dimensions": {
+         "w": 1143
+      }
+   },
+   "appliedMigrations": {
+      "textOnlyFormulas": true,
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "usesSampleData": true,
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "9be22c02-1",
+         "displayName": "Layout Grid",
+         "components": [
+            {
+               "type": "simple_value",
+               "id": "a5d14622-9",
+               "displayName": "Value Pair 2",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dsta5d146229"
+               },
+               "components": [
+                  {
+                     "type": "label",
+                     "role": "primary",
+                     "id": "d6ec6c9c-10",
+                     "displayName": "Primary Value",
+                     "size": "medium",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {},
+                           "defaultAggregate": "COUNT",
+                           "fmt": "txt"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstd6ec6c9c10",
+                        "kid": "e72ae6054f319cfe6934edd0eabc615e"
+                     },
+                     "formulas": [
+                        {
+                           "txt": "\"Comments\"",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Comments"
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c",
+                     "font_colour": "cx-color_blue_5",
+                     "wrap": "active"
+                  },
+                  {
+                     "type": "label",
+                     "role": "secondary",
+                     "id": "22bbd43b-11",
+                     "displayName": "Secondary Value",
+                     "size": "x-small",
+                     "fmt": "num",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst22bbd43b11",
+                        "kid": "e72ae6054f319cfe6934edd0eabc615e",
+                        "ops": [
+                           {
+                              "type": "aggregate",
+                              "aggregateBy": "22bbd43b11"
+                           }
+                        ],
+                        "aggs": {
+                           "22bbd43b11": "sum"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "&'9758e3a2'",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           8338
+                        ]
+                     ],
+                     "autoFmt": false,
+                     "align": "c",
+                     "wrap": "active"
+                  }
+               ]
+            },
+            {
+               "type": "simple_value",
+               "id": "aa114515-6",
+               "displayName": "Value Pair",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dstaa1145156"
+               },
+               "components": [
+                  {
+                     "type": "label",
+                     "role": "primary",
+                     "id": "1a2717af-7",
+                     "displayName": "Primary Value",
+                     "size": "medium",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {},
+                           "defaultAggregate": "COUNT",
+                           "fmt": "txt"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst1a2717af7",
+                        "kid": "e72ae6054f319cfe6934edd0eabc615e"
+                     },
+                     "formulas": [
+                        {
+                           "txt": "\"Posts\"",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Posts"
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c",
+                     "font_colour": "cx-color_blue_5"
+                  },
+                  {
+                     "type": "label",
+                     "role": "secondary",
+                     "id": "f577d4c4-8",
+                     "displayName": "Secondary Value",
+                     "size": "x-small",
+                     "fmt": "num",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "isDSTApplied": true,
+                           "resultCount": 1
+                        },
+                        "autoFmt": {
+                           "fmtArgs": {
+                              "prefix": ""
+                           },
+                           "defaultAggregate": "SUM",
+                           "fmt": "num"
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstf577d4c48",
+                        "kid": "e72ae6054f319cfe6934edd0eabc615e",
+                        "ops": [
+                           {
+                              "type": "aggregate",
+                              "aggregateBy": "f577d4c48"
+                           }
+                        ],
+                        "aggs": {
+                           "f577d4c48": "auto"
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "&'14c93884'",
+                           "src": {
+                              "t": "expr",
+                              "v": false,
+                              "c": [
+                                 {
+                                    "t": "l",
+                                    "v": "My Value"
+                                 }
+                              ]
+                           },
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           254
+                        ]
+                     ],
+                     "autoFmt": true,
+                     "align": "c"
+                  }
+               ]
+            }
+         ],
+         "rows": 1,
+         "cols": 2
+      },
+      {
+         "type": "chart_series",
+         "id": "3fe8fcf994b8a026fa622e660a37d3c93299784d",
+         "displayName": "Series Chart",
+         "dstContext": {
+            "id": "dst3fe8fcf994b8a026fa622e660a37d3c93299784d",
+            "kid": "e72ae6054f319cfe6934edd0eabc615e"
+         },
+         "components": [
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "9758e3a2",
+               "displayName": "Comments",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"10\",\"102\",\"181\",\"217\",\"210\",\"116\",\"467\",\"516\",\"537\",\"0\",\"2\",\"506\",\"423\",\"397\",\"313\",\"309\",\"328\",\"349\",\"312\",\"328\",\"380\",\"319\",\"334\",\"354\",\"342\",\"277\",\"156\",\"282\",\"0\",\"271\")",
+                     "src": {
+                        "v": false,
+                        "t": "expr",
+                        "c": [
+                           {
+                              "v": "array",
+                              "t": "f",
+                              "c": [
+                                 {
+                                    "v": "10",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "102",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "181",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "217",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "210",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "116",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "467",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "516",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "537",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "0",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "2",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "506",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "423",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "397",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "313",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "309",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "328",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "349",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "312",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "328",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "380",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "319",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "334",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "354",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "342",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "277",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "156",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "282",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "0",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "271",
+                                    "t": "l"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     10,
+                     102,
+                     181,
+                     217,
+                     210,
+                     116,
+                     467,
+                     516,
+                     537,
+                     0,
+                     2,
+                     506,
+                     423,
+                     397,
+                     313,
+                     309,
+                     328,
+                     349,
+                     312,
+                     328,
+                     380,
+                     319,
+                     334,
+                     354,
+                     342,
+                     277,
+                     156,
+                     282,
+                     0,
+                     271
+                  ]
+               ],
+               "autoFmt": false,
+               "seriesName": "Comments",
+               "renderer": "line",
+               "chartStyle": "points_area",
+               "lineWeight": "1",
+               "axis": "58ba7106",
+               "overrideColor": true,
+               "color": "cx-theme_red_5"
+            },
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "14c93884",
+               "displayName": "Posts",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "prefix": ""
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"6\",\"0\",\"4\",\"9\",\"4\",\"1\",\"7\",\"6\",\"3\",\"2\",\"18\",\"9\",\"19\",\"2\",\"15\",\"4\",\"15\",\"11\",\"4\",\"4\",\"20\",\"6\",\"15\",\"14\",\"13\",\"7\",\"7\",\"12\",\"9\",\"8\")",
+                     "src": {
+                        "v": false,
+                        "t": "expr",
+                        "c": [
+                           {
+                              "v": "array",
+                              "t": "f",
+                              "c": [
+                                 {
+                                    "v": "6",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "0",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "9",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "1",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "7",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "6",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "3",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "2",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "18",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "9",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "19",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "2",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "15",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": 0,
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "15",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "11",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "20",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "6",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "15",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "14",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "13",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "7",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "7",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "12",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "9",
+                                    "t": "l"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     6,
+                     0,
+                     4,
+                     9,
+                     4,
+                     1,
+                     7,
+                     6,
+                     3,
+                     2,
+                     18,
+                     9,
+                     19,
+                     2,
+                     15,
+                     4,
+                     15,
+                     11,
+                     4,
+                     4,
+                     20,
+                     6,
+                     15,
+                     14,
+                     13,
+                     7,
+                     7,
+                     12,
+                     9,
+                     8
+                  ]
+               ],
+               "autoFmt": false,
+               "seriesName": "Posts",
+               "renderer": "line",
+               "chartStyle": "points_area",
+               "lineWeight": "2",
+               "showValues": true,
+               "axis": "52c1ba1c",
+               "overrideColor": true,
+               "color": "cx-theme_warm_gray_5"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_x",
+               "id": "6351dac3",
+               "displayName": "Last 30 Days",
+               "renamed": true,
+               "fmt": "txt",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "array(\"Nov 25\",\"Nov 26\",\"Nov 27\",\"Nov 28\",\"Nov 29\",\"Nov 30\",\"Nov 31\",\"Dec 1\",\"Dec 2\",\"Dec 3\",\"Dec 4\",\"Dec 5\",\"Dec 6\",\"Dec 7\",\"Dec 8\",\"Dec 9\",\"Dec 10\",\"Dec 11\",\"Dec 12\",\"Dec 13\",\"Dec 14\",\"Dec 15\",\"Dec 16\",\"Dec 17\",\"Dec 18\",\"Dec 19\",\"Dec 20\",\"Dec 21\",\"Dec 22\",\"Dec 23\")",
+                     "src": {
+                        "v": false,
+                        "t": "expr",
+                        "c": [
+                           {
+                              "v": "array",
+                              "t": "f",
+                              "c": [
+                                 {
+                                    "v": "Nov 25",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 26",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 27",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 28",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 29",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 30",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Nov 31",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 1",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 2",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 3",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 4",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 5",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 6",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 7",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 8",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 9",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 10",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 11",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 12",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 13",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 14",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 15",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 16",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 17",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 18",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 19",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 20",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 21",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 22",
+                                    "t": "l"
+                                 },
+                                 {
+                                    "v": "Dec 23",
+                                    "t": "l"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "Nov 25",
+                     "Nov 26",
+                     "Nov 27",
+                     "Nov 28",
+                     "Nov 29",
+                     "Nov 30",
+                     "Nov 31",
+                     "Dec 1",
+                     "Dec 2",
+                     "Dec 3",
+                     "Dec 4",
+                     "Dec 5",
+                     "Dec 6",
+                     "Dec 7",
+                     "Dec 8",
+                     "Dec 9",
+                     "Dec 10",
+                     "Dec 11",
+                     "Dec 12",
+                     "Dec 13",
+                     "Dec 14",
+                     "Dec 15",
+                     "Dec 16",
+                     "Dec 17",
+                     "Dec 18",
+                     "Dec 19",
+                     "Dec 20",
+                     "Dec 21",
+                     "Dec 22",
+                     "Dec 23"
+                  ]
+               ],
+               "label": "Last 30 Days",
+               "labelAngle": "-45",
+               "labelDrop": "3"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "58ba7106",
+               "displayName": "Comments",
+               "fmt": "num",
+               "fmtArgs": {},
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "Comments",
+               "showLabel": true,
+               "showAxis": false,
+               "origin": "0",
+               "originLine": false,
+               "labelDrop": 0,
+               "grid": true
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "52c1ba1c",
+               "displayName": "Posts",
+               "fmt": "num",
+               "fmtArgs": {},
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "",
+               "showLabel": true,
+               "axisPosition": "right",
+               "showAxis": false,
+               "customInterval": false,
+               "origin": "0",
+               "labelDrop": 0
+            }
+         ]
+      }
+   ]
+}
